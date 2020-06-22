@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewData["Title"] = "Notes";
+}
+
+<!-- [ Main Content ] start -->
+<section class="pcoded-main-container">
+    <div class="pcoded-wrapper">
+        <div class="pcoded-content">
+            <div class="pcoded-inner-content">
+                <!-- [ breadcrumb ] start -->
+                <div class="page-header">
+                    <div class="page-block">
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <div class="page-header-title">
+                                    <h5 class="m-b-10">Notes</h5>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/Dashboard/@Pages.Dashboard1.Value"><i class="feather icon-home"></i></a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Pages</a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Notes</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- [ breadcrumb ] end -->
+                <div class="main-body">
+                    <div class="page-wrapper">
+                        <!-- [ Main Content ] start -->
+                        <div class="row">
+                            <!-- [ notes ] start -->
+                            <div class="col-sm-12">
+                                <div class="card">
+                                    <div class="card-block note-card">
+                                        <div class="note-box-wrapper row">
+                                            <div class="note-box-aside col-lg-12 col-xl-3">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <form class="form-material">
+                                                            <div class="material-group">
+                                                                <div class="form-group form-primary">
+                                                                    <input type="text" name="task-insert" id="Note-search" class="form-control" placeholder="Search notes" required="">
+                                                                    <span class="form-bar"></span>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div class="notes-list">
+                                                    <ul id="Note-list" class="Note-list list-group"></ul>
+                                                </div>
+                                            </div>
+                                            <div class="note-box-content col-lg-12 col-xl-9">
+                                                <div class="Note-header">
+                                                    <div class="Note-created float-right">
+                                                        <span class="Note-created__on d-block">Note Created On</span>
+                                                        <span class="Note-created__date" id="Note-created__date"></span>
+                                                    </div>
+                                                    <a href="#!" class="btn btn-md btn-primary hidden-xs Note-add">Add New +</a>
+                                                </div>
+                                                <div class="note-body">
+                                                    <div class="note-write">
+                                                        <textarea id="Note-pad" class="form-control" placeholder="Type your note here" rows="10"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ notes ] end -->
+                        </div>
+                        <!-- [ Main Content ] end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- [ Main Content ] end -->
+
+@section Styles{
+
+}
+
+@section Scripts{
+    <!-- notes js -->
+    <script src="~/assets/plugins/autosize/js/autosize.min.js"></script>
+    <script src="~/assets/plugins/store-js/js/store.min.js"></script>
+    <script src="~/assets/plugins/moment/js/moment.js"></script>
+    <script src="~/assets/plugins/store-js/js/note.js"></script>
+}
+

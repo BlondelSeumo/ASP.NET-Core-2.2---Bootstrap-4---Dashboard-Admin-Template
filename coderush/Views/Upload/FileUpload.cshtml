@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewData["Title"] = "FileUpload";
+}
+
+<!-- [ Main Content ] start -->
+<section class="pcoded-main-container">
+    <div class="pcoded-wrapper">
+        <div class="pcoded-content">
+            <div class="pcoded-inner-content">
+                <!-- [ breadcrumb ] start -->
+                <div class="page-header">
+                    <div class="page-block">
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <div class="page-header-title">
+                                    <h5 class="m-b-10">File Upload</h5>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/Dashboard/@Pages.Dashboard1.Value"><i class="feather icon-home"></i></a></li>
+                                    <li class="breadcrumb-item"><a href="#!">File Upload</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- [ breadcrumb ] end -->
+                <div class="main-body">
+                    <div class="page-wrapper">
+                        <!-- [ Main Content ] start -->
+                        <div class="row">
+                            <!-- [ file-upload ] start -->
+                            <div class="col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>File Upload</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <form action="~/assets/plugins/fileupload/js/file-upload.php" class="dropzone">
+                                            <div class="fallback">
+                                                <input name="file" type="file" multiple />
+                                            </div>
+                                        </form>
+                                        <div class="text-center m-t-20">
+                                            <button class="btn btn-primary">Upload Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ file-upload ] end -->
+                        </div>
+                        <!-- [ Main Content ] end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- [ Main Content ] end -->
+
+@section Styles{
+    <!-- fileupload-custom css -->
+    <link rel="stylesheet" href="~/assets/css/pages/fileupload.css">
+}
+
+@section Scripts{
+    <!-- file-upload Js -->
+    <script src="~/assets/plugins/fileupload/js/dropzone-amd-module.min.js"></script>
+}
+

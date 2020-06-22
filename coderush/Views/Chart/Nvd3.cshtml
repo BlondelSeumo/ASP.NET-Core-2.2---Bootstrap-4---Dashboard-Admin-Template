@@ -1,0 +1,115 @@
+﻿
+@{
+    ViewData["Title"] = "Nvd3";
+}
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-wrapper">
+        <div class="pcoded-content">
+            <div class="pcoded-inner-content">
+                <!-- [ breadcrumb ] start -->
+                <div class="page-header">
+                    <div class="page-block">
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <div class="page-header-title">
+                                    <h5 class="m-b-10">NVD3 Chart</h5>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/Dashboard/@Pages.Dashboard1.Value"><i class="feather icon-home"></i></a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Chart</a></li>
+                                    <li class="breadcrumb-item"><a href="#!">NVD3 Chart</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- [ breadcrumb ] end -->
+                <div class="main-body">
+                    <div class="page-wrapper">
+                        <!-- [ Main Content ] start -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="alert alert-primary" role="alert">
+                                    <p>Use our extra helper file for quick setup Charts in your page - <a href="/Chart/@Pages.ChartPackage.Value" target="_blank" class="alert-link">CHECKOUT</a></p>
+                                    <label class="text-muted">Copy/paste source code in your page in just couples of seconds.</label>
+                                </div>
+                            </div>
+                            <!-- [ nvd3-chart ] start -->
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Line Chart</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div id="nvd3-line-1" class="nvd-chart" style="height: 300px">
+                                            <svg></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Discrete Bar Chart</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div id="nvd3-bar-1" class="nvd-chart" style="height: 300px"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Stacked/Grouped Multi-Bar Chart</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div id="nvd3-multi-bar-1" class="nvd-chart" style="height: 300px"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Regular Pie Chart</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div id="nvd3-pie-1" class="nvd-chart" style="height: 300px"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Donut Chart</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div id="nvd3-donut-1" class="nvd-chart" style="height: 300px"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ nvd3-Chart ] end -->
+                        </div>
+                        <!-- [ Main Content ] end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@section Styles{
+    <!-- nvd3 css -->
+    <link rel="stylesheet" href="~/assets/plugins/chart-nvd3/css/nv.d3.min.css">
+}
+
+@section Scripts{
+    <!-- chart-nvd3 Js -->
+    <script src="~/assets/plugins/chart-nvd3/js/d3.min.js"></script>
+    <script src="~/assets/plugins/chart-nvd3/js/nv.d3.min.js"></script>
+    <script src="~/assets/plugins/chart-nvd3/js/stream_layers.js"></script>
+    <script src="~/assets/js/pages/chart-nvd3-custom.js"></script>
+}
+

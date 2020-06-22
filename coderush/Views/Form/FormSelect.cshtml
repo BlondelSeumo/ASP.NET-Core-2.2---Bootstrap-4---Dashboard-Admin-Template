@@ -1,0 +1,362 @@
+﻿
+@{
+    ViewData["Title"] = "FormSelect";
+}
+
+<!-- [ Main Content ] start -->
+<section class="pcoded-main-container">
+    <div class="pcoded-wrapper">
+        <div class="pcoded-content">
+            <div class="pcoded-inner-content">
+                <!-- [ breadcrumb ] start -->
+                <div class="page-header">
+                    <div class="page-block">
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <div class="page-header-title">
+                                    <h5 class="m-b-10">Form Select</h5>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/Dashboard/@Pages.Dashboard1.Value"><i class="feather icon-home"></i></a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Form Components</a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Form Select</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- [ breadcrumb ] end -->
+                <div class="main-body">
+                    <div class="page-wrapper">
+                        <!-- [ Main Content ] start -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="alert alert-primary" role="alert">
+                                    <p>Use our extra helper file for quick setup Form Components in your page - <a href="index-form-package.html" target="_blank" class="alert-link">CHECKOUT</a></p>
+                                    <label class="text-muted">Copy/paste source code in your page in just couples of seconds.</label>
+                                </div>
+                            </div>
+                            <!-- [ Select2 ] start -->
+                            <div class="col-sm-12">
+                                <div class="card select-card">
+                                    <div class="card-header">
+                                        <h5>Select2</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div class="row">
+                                            <div class="col-xl-4 col-md-6 mb-5">
+                                                <h5>Single Select</h5>
+                                                <hr>
+                                                <p>The<code>select2</code> can take a regular select box like this...</p>
+                                                <select class="js-example-basic-single form-control">
+                                                    <optgroup label="Developer">
+                                                        <option value="AL">Alabama</option>
+                                                        <option value="WY">Wyoming</option>
+                                                    </optgroup>
+                                                    <optgroup label="Designer">
+                                                        <option value="WY">Peter</option>
+                                                        <option value="WY">Hanry Die</option>
+                                                        <option value="WY">John Doe</option>
+                                                    </optgroup>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-xl-4 col-md-6 mb-5">
+                                                <h5>Multi Select</h5>
+                                                <hr>
+                                                <p>The select below is declared with the<code>multiple</code> attribute</p>
+                                                <select class="js-example-basic-multiple col-sm-12" multiple="multiple">
+                                                    <option value="AL">Alabama</option>
+                                                    <option value="WY">Wyoming</option>
+                                                    <option value="WY">Coming</option>
+                                                    <option value="WY">Hanry Die</option>
+                                                    <option value="WY">John Doe</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-xl-4 col-md-6 mb-5">
+                                                <h5>With Placeholder</h5>
+                                                <hr>
+                                                <p><code>select2</code> uses the <code>placeholder</code> attribute on multiple select boxes</p>
+                                                <select class="js-example-placeholder-multiple col-sm-12">
+                                                    <option value="AL">Alabama</option>
+                                                    <option value="WY">Wyoming</option>
+                                                    <option value="WY">Coming</option>
+                                                    <option value="WY">Hanry Die</option>
+                                                    <option value="WY">John Doe</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-xl-4 col-md-6 mb-5">
+                                                <h5>Tagging Support</h5>
+                                                <hr>
+                                                <p>The select below is declared with the class<code>.js-example-tags</code></p>
+                                                <select class="js-example-tags col-sm-12" multiple="multiple">
+                                                    <option value="AL">Alabama</option>
+                                                    <option value="WY">Wyoming</option>
+                                                    <option value="WY">Coming</option>
+                                                    <option value="WY">Hanry Die</option>
+                                                    <option value="WY">John Doe</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-xl-4 col-md-6 mb-5">
+                                                <h5>Automatic Tokenization</h5>
+                                                <hr>
+                                                <p>The select below is declared with the class<code>.js-example-tokenizer</code></p>
+                                                <select class="js-example-tokenizer col-sm-12" multiple="multiple">
+                                                    <option value="AL">Alabama</option>
+                                                    <option value="WY">Wyoming</option>
+                                                    <option value="WY">Coming</option>
+                                                    <option value="WY">Hanry Die</option>
+                                                    <option value="WY">John Doe</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-xl-4 col-md-6 mb-5">
+                                                <h5>RTL Support</h5>
+                                                <hr>
+                                                <p>The select below is declared with the class<code>.js-example-rtl</code></p>
+                                                <select class="js-example-rtl col-sm-12" multiple="multiple">
+                                                    <option value="AL">Alabama</option>
+                                                    <option value="WY">Wyoming</option>
+                                                    <option value="WY">Coming</option>
+                                                    <option value="WY">Hanry Die</option>
+                                                    <option value="WY">John Doe</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-xl-4 col-md-6 mb-5">
+                                                <h5>Limiting The Number Of Selections</h5>
+                                                <hr>
+                                                <p>The select below is declared with the class<code>.js-example-basic-multiple-limit</code></p>
+                                                <select class="js-example-basic-multiple-limit col-sm-12" multiple="multiple">
+                                                    <option value="AL">Alabama</option>
+                                                    <option value="WY">Wyoming</option>
+                                                    <option value="WY">Coming</option>
+                                                    <option value="WY">Hanry Die</option>
+                                                    <option value="WY">John Doe</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-xl-4 col-md-6 mb-5">
+                                                <h5>Diacritics Support</h5>
+                                                <hr>
+                                                <p>The select below is declared with the class<code>.js-example-diacritics</code></p>
+                                                <select class="js-example-diacritics col-sm-12" multiple="multiple">
+                                                    <option value="AL">Alabama</option>
+                                                    <option value="WY">Wyoming</option>
+                                                    <option value="WY">Coming</option>
+                                                    <option value="WY">Hanry Die</option>
+                                                    <option value="WY">John Doe</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-xl-4 col-md-6 mb-5">
+                                                <h5>Responsive Width</h5>
+                                                <hr>
+                                                <p>The select below is declared with the class<code>.js-example-responsive</code></p>
+                                                <select class="js-example-responsive col-sm-12" multiple="multiple" style="width:75%;">
+                                                    <option value="AL">Alabama</option>
+                                                    <option value="WY">Wyoming</option>
+                                                    <option value="WY">Coming</option>
+                                                    <option value="WY">Hanry Die</option>
+                                                    <option value="WY">John Doe</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-xl-4 col-md-6 mb-5">
+                                                <h5>Loading With Array</h5>
+                                                <hr>
+                                                <p>The select below is declared with the class<code>.js-example-data-array</code></p>
+                                                <select class="js-example-data-array col-sm-12"></select>
+                                            </div>
+
+                                            <div class="col-xl-4 col-md-6 mb-5">
+                                                <h5>Load Remote Data ( Ajax )</h5>
+                                                <hr>
+                                                <p>
+                                                    The select below is declared with the class<code>.js-data-example-ajax</code>
+                                                </p>
+                                                <select class="js-data-example-ajax col-sm-12">
+                                                    <option value="3620194" selected="selected">select2</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-xl-4 col-md-6 mb-5">
+                                                <h5>Disabled Results</h5>
+                                                <hr>
+                                                <p>The select below is declared with the class<code>.js-example-disabled-results</code></p>
+                                                <select class="js-example-disabled-results col-sm-12">
+                                                    <option value="one">First</option>
+                                                    <option value="two" disabled="disabled">
+                                                        Second (disabled)
+                                                    </option>
+                                                    <option value="three">Third</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-xl-4 col-md-6 mb-5">
+                                                <h5 class="sub-title">Hiding The Search Box</h5>
+                                                <hr>
+                                                <p>The select below is declared with the class<code>.js-example-basic-hide-search</code></p>
+                                                <select class="js-example-basic-hide-search col-sm-12" multiple="multiple" style="width: 75%">
+                                                    <optgroup label="Developer">
+                                                        <option value="AL">Smith</option>
+                                                        <option value="WY">Peter</option>
+                                                        <option value="WY">James</option>
+                                                        <option value="WY">Hanry Die</option>
+                                                        <option value="WY">John Doe</option>
+                                                        <option value="WY">Harry Poter</option>
+                                                    </optgroup>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-xl-4 col-md-6  mb-5">
+                                                <h5>Enable-Disable</h5>
+                                                <hr>
+                                                <p>The select below is declared with the class<code>.js-example-disabled</code></p>
+                                                <select class="js-example-disabled col-sm-8">
+                                                    <option value="AL">Smith</option>
+                                                    <option value="WY">Peter</option>
+                                                    <option value="WY">James</option>
+                                                    <option value="WY">Hanry Die</option>
+                                                    <option value="WY">John Doe</option>
+                                                    <option value="WY">Harry Poter</option>
+                                                </select>
+                                                <button class="btn btn-success m-t-20 m-b-20 m-l-10   js-programmatic-enable">Enable</button>
+                                                <button class="btn btn-danger m-t-20 m-b-20 m-l-10   js-programmatic-disable">Disable</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ Select2 ] end -->
+                            <!-- [ multi-select ] start -->
+                            <div class="col-sm-12">
+                                <div class="card select-card">
+                                    <div class="card-header">
+                                        <h5>Multi Select</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div class="row">
+                                            <div class="col-xl-4 col-md-6 mb-5">
+                                                <h5>Pre-Selected Options</h5>
+                                                <hr>
+                                                <select multiple="multiple" id="my-select" name="my-select[]">
+                                                    <option value='elem_1' selected="">elem 1</option>
+                                                    <option value='elem_2'>elem 2</option>
+                                                    <option value='elem_3'>elem 3</option>
+                                                    <option value='elem_4'>elem 4</option>
+                                                    <option value='elem_5'>elem 5</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-xl-4 col-md-6 mb-5">
+                                                <h5>Custom Headers And Footers</h5>
+                                                <hr>
+                                                <select id='custom-headers1' multiple='multiple'>
+                                                    <option value='elem_1'>elem 1</option>
+                                                    <option value='elem_2'>elem 2</option>
+                                                    <option value='elem_3'>elem 3</option>
+                                                    <option value='elem_4'>elem 4</option>
+                                                    <option value='elem_5'>elem 5</option>
+                                                    <option value='elem_6'>elem 6</option>
+                                                    <option value='elem_7'>elem 7</option>
+                                                    <option value='elem_8'>elem 8</option>
+                                                    <option value='elem_9'>elem 9</option>
+                                                    <option value='elem_10'>elem 10</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-xl-4 col-md-6 mb-5">
+                                                <h5>Optgroup</h5>
+                                                <hr>
+                                                <select id='optgroup' multiple='multiple'>
+                                                    <optgroup label='Friends'>
+                                                        <option value='1'>Yoda</option>
+                                                        <option value='2' selected>Obiwan</option>
+                                                    </optgroup>
+                                                    <optgroup label='Enemies'>
+                                                        <option value='3'>Palpatine</option>
+                                                        <option value='4' disabled>Darth Vader</option>
+                                                    </optgroup>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-xl-4 col-md-12 mb-5">
+                                                <h5>Searchable</h5>
+                                                <hr>
+                                                <select id='custom-headers' class="searchable" multiple='multiple'>
+                                                    <option value='elem_1' selected>elem 1</option>
+                                                    <option value='elem_2'>elem 2</option>
+                                                    <option value='elem_3'>elem 3</option>
+                                                    <option value='elem_4' selected>elem 4</option>
+                                                    <option value='elem_5'>elem 5</option>
+                                                    <option value='elem_6'>elem 6</option>
+                                                    <option value='elem_7'>elem 7</option>
+                                                    <option value='elem_8'>elem 8</option>
+                                                    <option value='elem_9'>elem 9</option>
+                                                    <option value='elem_10'>elem 10</option>
+                                                    <option value='elem_11'>elem 11</option>
+                                                    <option value='elem_12'>elem 12</option>
+                                                    <option value='elem_13'>elem 13</option>
+                                                    <option value='elem_14'>elem 14</option>
+                                                    <option value='elem_15'>elem 15</option>
+                                                    <option value='elem_16'>elem 16</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-xl-8 col-md-12 mb-5">
+                                                <h5>Public Methods</h5>
+                                                <hr>
+                                                <button type="button" class="btn btn-primary   m-b-10" id='select-all'>select all</button>
+                                                <button type="button" class="btn btn-primary   m-b-10" id='deselect-all'>deselect all</button>
+                                                <button type="button" class="btn btn-primary   m-b-10" id='select-5'>select 5 elems</button>
+                                                <button type="button" class="btn btn-primary   m-b-10" id='deselect-5'>deselect 5 elems</button>
+                                                <select id='public-methods' multiple='multiple'>
+                                                    <option value='elem_1'>elem 1</option>
+                                                    <option value='elem_2' disabled>elem 2</option>
+                                                    <option value='elem_3'>elem 3</option>
+                                                    <option value='elem_4'>elem 4</option>
+                                                    <option value='elem_5'>elem 5</option>
+                                                    <option value='elem_6'>elem 6</option>
+                                                    <option value='elem_7'>elem 7</option>
+                                                    <option value='elem_8'>elem 8</option>
+                                                    <option value='elem_9'>elem 9</option>
+                                                    <option value='elem_10'>elem 10</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ multi-select ] end -->
+                        </div>
+                        <!-- [ Main Content ] end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- [ Main Content ] end -->
+
+@section Styles{
+    <!-- select2 css -->
+    <link rel="stylesheet" href="~/assets/plugins/select2/css/select2.min.css">
+    <!-- multi-select css -->
+    <link rel="stylesheet" href="~/assets/plugins/multi-select/css/multi-select.css">
+}
+
+@section Scripts{
+    <!-- select2 Js -->
+    <script src="~/assets/plugins/select2/js/select2.full.min.js"></script>
+
+    <!-- multi-select Js -->
+    <script src="~/assets/plugins/multi-select/js/jquery.quicksearch.js"></script>
+    <script src="~/assets/plugins/multi-select/js/jquery.multi-select.js"></script>
+
+    <!-- form-select-custom Js -->
+    <script src="~/assets/js/pages/form-select-custom.js"></script>
+}

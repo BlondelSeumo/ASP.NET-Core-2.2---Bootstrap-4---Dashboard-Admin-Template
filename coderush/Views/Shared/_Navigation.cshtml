@@ -1,0 +1,257 @@
+﻿<div class="navbar-wrapper">
+    <div class="navbar-brand header-logo">
+        <a href="/Dashboard/@Pages.Dashboard1.Value" class="b-brand">
+            <div class="b-bg">
+                <i class="feather icon-radio"></i>
+            </div>
+            <span class="b-title">Go Jazz</span>
+        </a>
+        <a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
+    </div>
+    <div class="navbar-content scroll-div">
+        <ul class="nav pcoded-inner-navbar">
+            <li class="nav-item pcoded-menu-caption">
+                <label>Navigation</label>
+            </li>
+            <li class="nav-item pcoded-hasmenu @Html.IsSelected(controller: "Dashboard")">
+                <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
+                <ul class="pcoded-submenu">
+                    <li class="@Html.IsSelected(controller: "Dashboard", action: Pages.Dashboard1.Value)"><a href="/Dashboard/@Pages.Dashboard1.Value" class="">@Pages.Dashboard1.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Dashboard", action: Pages.Dashboard2.Value)"><a href="/Dashboard/@Pages.Dashboard2.Value" class="">@Pages.Dashboard2.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Dashboard", action: Pages.Dashboard3.Value)"><a href="/Dashboard/@Pages.Dashboard3.Value" class="">@Pages.Dashboard3.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Dashboard", action: Pages.Dashboard4.Value)"><a href="/Dashboard/@Pages.Dashboard4.Value" class="">@Pages.Dashboard4.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Dashboard", action: Pages.Dashboard5.Value)"><a href="/Dashboard/@Pages.Dashboard5.Value" class="">@Pages.Dashboard5.Value<span class="pcoded-badge label label-danger">NEW</span></a></li>
+                    <li class="@Html.IsSelected(controller: "Dashboard", action: Pages.Dashboard6.Value)"><a href="/Dashboard/@Pages.Dashboard6.Value" class="">@Pages.Dashboard6.Value</a></li>
+                </ul>
+            </li>
+            <li class="nav-item pcoded-hasmenu @Html.IsSelected(controller: "Layout")">
+                <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-layout"></i></span><span class="pcoded-mtext">Layout</span></a>
+                <ul class="pcoded-submenu">
+                    <li class="@Html.IsSelected(controller: "Layout", action: Pages.VerticalStatic.Value)"><a target="_blank" href="/Layout/@Pages.VerticalStatic.Value" class="">@Pages.VerticalStatic.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Layout", action: Pages.VerticalFixed.Value)"><a target="_blank" href="/Layout/@Pages.VerticalFixed.Value" class="">@Pages.VerticalFixed.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Layout", action: Pages.VerticalNavbarFixed.Value)"><a target="_blank" href="/Layout/@Pages.VerticalNavbarFixed.Value" class="">@Pages.VerticalNavbarFixed.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Layout", action: Pages.VerticalCollapseMenu.Value)"><a target="_blank" href="/Layout/@Pages.VerticalCollapseMenu.Value" class="">@Pages.VerticalCollapseMenu.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Layout", action: Pages.LightLayout.Value)"><a target="_blank" href="/Layout/@Pages.LightLayout.Value" class="">@Pages.LightLayout.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Layout", action: Pages.DarkLayout.Value)"><a target="_blank" href="/Layout/@Pages.DarkLayout.Value" class="">@Pages.DarkLayout.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Layout", action: Pages.ColorIcon.Value)"><a target="_blank" href="/Layout/@Pages.ColorIcon.Value" class="">@Pages.ColorIcon.Value</a></li>
+                </ul>
+            </li>
+            <li class="nav-item pcoded-hasmenu @Html.IsSelected(controller: "Widget")">
+                <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-layers"></i></span><span class="pcoded-mtext">Widget</span><span class="pcoded-badge label label-info">100+</span></a>
+                <ul class="pcoded-submenu">
+                    <li class="@Html.IsSelected(controller: "Widget", action: Pages.Widget1.Value)"><a href="/Widget/@Pages.Widget1.Value" class="">@Pages.Widget1.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Widget", action: Pages.Widget2.Value)"><a href="/Widget/@Pages.Widget2.Value" class="">@Pages.Widget2.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Widget", action: Pages.Widget3.Value)"><a href="/Widget/@Pages.Widget3.Value" class="">@Pages.Widget3.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Widget", action: Pages.Widget4.Value)"><a href="/Widget/@Pages.Widget4.Value" class="">@Pages.Widget4.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Widget", action: Pages.Widget5.Value)"><a href="/Widget/@Pages.Widget5.Value" class="">@Pages.Widget5.Value<span class="pcoded-badge label label-danger">NEW</span></a></li>
+
+                </ul>
+            </li>
+            <li class="nav-item pcoded-menu-caption">
+                <label>UI Element</label>
+            </li>
+            <li class="nav-item pcoded-hasmenu @Html.IsSelected(controller: "ElementBasic")">
+                <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-box"></i></span><span class="pcoded-mtext">Element Basic</span></a>
+                <ul class="pcoded-submenu">
+                    <li class="@Html.IsSelected(controller: "ElementBasic", action: Pages.Alert.Value)"><a href="/ElementBasic/@Pages.Alert.Value" class="">@Pages.Alert.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementBasic", action: Pages.Button.Value)"><a href="/ElementBasic/@Pages.Button.Value" class="">@Pages.Button.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementBasic", action: Pages.Badges.Value)"><a href="/ElementBasic/@Pages.Badges.Value" class="">@Pages.Badges.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementBasic", action: Pages.Pagination.Value)"><a href="/ElementBasic/@Pages.Pagination.Value" class="">@Pages.Pagination.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementBasic", action: Pages.Cards.Value)"><a href="/ElementBasic/@Pages.Cards.Value" class="">@Pages.Cards.Value<span class="pcoded-badge label label-danger">NEW</span></a></li>
+                    <li class="@Html.IsSelected(controller: "ElementBasic", action: Pages.Collapse.Value)"><a href="/ElementBasic/@Pages.Collapse.Value" class="">@Pages.Collapse.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementBasic", action: Pages.Carousel.Value)"><a href="/ElementBasic/@Pages.Carousel.Value" class="">@Pages.Carousel.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementBasic", action: Pages.GridSystem.Value)"><a href="/ElementBasic/@Pages.GridSystem.Value" class="">@Pages.GridSystem.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementBasic", action: Pages.Progress.Value)"><a href="/ElementBasic/@Pages.Progress.Value" class="">@Pages.Progress.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementBasic", action: Pages.Modal.Value)"><a href="/ElementBasic/@Pages.Modal.Value" class="">@Pages.Modal.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementBasic", action: Pages.Spinner.Value)"><a href="/ElementBasic/@Pages.Spinner.Value" class="">@Pages.Spinner.Value<span class="pcoded-badge label label-danger">NEW</span></a></li>
+                    <li class="@Html.IsSelected(controller: "ElementBasic", action: Pages.Tabs.Value)"><a href="/ElementBasic/@Pages.Tabs.Value" class="">@Pages.Tabs.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementBasic", action: Pages.Typography.Value)"><a href="/ElementBasic/@Pages.Typography.Value" class="">@Pages.Typography.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementBasic", action: Pages.Tooltip.Value)"><a href="/ElementBasic/@Pages.Tooltip.Value" class="">@Pages.Tooltip.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementBasic", action: Pages.Toasts.Value)"><a href="/ElementBasic/@Pages.Toasts.Value" class="">@Pages.Toasts.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementBasic", action: Pages.Other.Value)"><a href="/ElementBasic/@Pages.Other.Value" class="">@Pages.Other.Value<span class="pcoded-badge label label-danger">NEW</span></a></li>
+
+                </ul>
+            </li>
+            <li class="nav-item pcoded-hasmenu @Html.IsSelected(controller: "ElementAdvance")">
+                <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-gitlab"></i></span><span class="pcoded-mtext">Element Advance</span></a>
+                <ul class="pcoded-submenu">
+                    <li class="@Html.IsSelected(controller: "ElementAdvance", action: Pages.SweetAlert.Value)"><a href="/ElementAdvance/@Pages.SweetAlert.Value" class="">@Pages.SweetAlert.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementAdvance", action: Pages.Datepicker.Value)"><a href="/ElementAdvance/@Pages.Datepicker.Value" class="">@Pages.Datepicker.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementAdvance", action: Pages.Gridstack.Value)"><a href="/ElementAdvance/@Pages.Gridstack.Value" class="">@Pages.Gridstack.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementAdvance", action: Pages.Lightbox.Value)"><a href="/ElementAdvance/@Pages.Lightbox.Value" class="">@Pages.Lightbox.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementAdvance", action: Pages.AdvanceModal.Value)"><a href="/ElementAdvance/@Pages.AdvanceModal.Value" class="">@Pages.AdvanceModal.Value<span class="pcoded-badge label label-danger">NEW</span></a></li>
+                    <li class="@Html.IsSelected(controller: "ElementAdvance", action: Pages.Notification.Value)"><a href="/ElementAdvance/@Pages.Notification.Value" class="">@Pages.Notification.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementAdvance", action: Pages.Nestable.Value)"><a href="/ElementAdvance/@Pages.Nestable.Value" class="">@Pages.Nestable.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementAdvance", action: Pages.Pnotify.Value)"><a href="/ElementAdvance/@Pages.Pnotify.Value" class="">@Pages.Pnotify.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementAdvance", action: Pages.Rating.Value)"><a href="/ElementAdvance/@Pages.Rating.Value" class="">@Pages.Rating.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementAdvance", action: Pages.Rangeslider.Value)"><a href="/ElementAdvance/@Pages.Rangeslider.Value" class="">@Pages.Rangeslider.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementAdvance", action: Pages.Slider.Value)"><a href="/ElementAdvance/@Pages.Slider.Value" class="">@Pages.Slider.Value<span class="pcoded-badge label label-danger">NEW</span></a></li>
+                    <li class="@Html.IsSelected(controller: "ElementAdvance", action: Pages.Highlighter.Value)"><a href="/ElementAdvance/@Pages.Highlighter.Value" class="">@Pages.Highlighter.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementAdvance", action: Pages.Tour.Value)"><a href="/ElementAdvance/@Pages.Tour.Value" class="">@Pages.Tour.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementAdvance", action: Pages.TreeView.Value)"><a href="/ElementAdvance/@Pages.TreeView.Value" class="">@Pages.TreeView.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementAdvance", action: Pages.Toolbar.Value)"><a href="/ElementAdvance/@Pages.Toolbar.Value" class="">@Pages.Toolbar.Value</a></li>
+                </ul>
+            </li>
+            <li class="nav-item pcoded-hasmenu @Html.IsSelected(controller: "ElementExtra")">
+                <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-package"></i></span><span class="pcoded-mtext">Element Extra</span></a>
+                <ul class="pcoded-submenu">
+                    <li class="@Html.IsSelected(controller: "ElementExtra", action: Pages.Timeout.Value)"><a href="/ElementExtra/@Pages.Timeout.Value" class="">@Pages.Timeout.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementExtra", action: Pages.Idle.Value)"><a href="/ElementExtra/@Pages.Idle.Value" class="">@Pages.Idle.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "ElementExtra", action: Pages.Offline.Value)"><a href="/ElementExtra/@Pages.Offline.Value" class="">@Pages.Offline.Value</a></li>
+                </ul>
+            </li>
+            <li class="nav-item  @Html.IsSelected(controller: "Animation")"><a href="/Animation/@Pages.Animation1.Value" class="nav-link"><span class="pcoded-micon"><i class="feather icon-aperture"></i></span><span class="pcoded-mtext">Animations</span></a></li>
+            <li class="nav-item pcoded-hasmenu @Html.IsSelected(controller: "Icon")">
+                <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-feather"></i></span><span class="pcoded-mtext">Icons</span></a>
+                <ul class="pcoded-submenu">
+                    <li class="@Html.IsSelected(controller: "Icon", action: Pages.Feather.Value)"><a href="/Icon/@Pages.Feather.Value" class="">@Pages.Feather.Value<span class="pcoded-badge label label-danger">NEW</span></a></li>
+                    <li class="@Html.IsSelected(controller: "Icon", action: Pages.FontAwesome.Value)"><a href="/Icon/@Pages.FontAwesome.Value" class="">@Pages.FontAwesome.Value<span class="pcoded-badge label label-info">100+</span></a></li>
+                    <li class="@Html.IsSelected(controller: "Icon", action: Pages.Flag.Value)"><a href="/Icon/@Pages.Flag.Value" class="">@Pages.Flag.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Icon", action: Pages.Material.Value)"><a href="/Icon/@Pages.Material.Value" class="">@Pages.Material.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Icon", action: Pages.SimpleLine.Value)"><a href="/Icon/@Pages.SimpleLine.Value" class="">@Pages.SimpleLine.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Icon", action: Pages.Themify.Value)"><a href="/Icon/@Pages.Themify.Value" class="">@Pages.Themify.Value</a></li>
+                </ul>
+            </li>
+            <li class="nav-item pcoded-menu-caption">
+                <label>Forms</label>
+            </li>
+            <li class="nav-item pcoded-hasmenu @Html.IsSelected(controller: "Form")">
+                <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Forms</span></a>
+                <ul class="pcoded-submenu">
+                    <li class="@Html.IsSelected(controller: "Form", action: Pages.FormElements.Value)"><a href="/Form/@Pages.FormElements.Value" class="">@Pages.FormElements.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Form", action: Pages.FormAdvance.Value)"><a href="/Form/@Pages.FormAdvance.Value" class="">@Pages.FormAdvance.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Form", action: Pages.FormValidation.Value)"><a href="/Form/@Pages.FormValidation.Value" class="">@Pages.FormValidation.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Form", action: Pages.FormMasking.Value)"><a href="/Form/@Pages.FormMasking.Value" class="">@Pages.FormMasking.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Form", action: Pages.FormWizard.Value)"><a href="/Form/@Pages.FormWizard.Value" class="">@Pages.FormWizard.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Form", action: Pages.FormPicker.Value)"><a href="/Form/@Pages.FormPicker.Value" class="">@Pages.FormPicker.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Form", action: Pages.FormSelect.Value)"><a href="/Form/@Pages.FormSelect.Value" class="">@Pages.FormSelect.Value</a></li>
+                </ul>
+            </li>
+            <li class="nav-item pcoded-menu-caption">
+                <label>Tables</label>
+            </li>
+            <li class="nav-item pcoded-hasmenu @Html.IsSelected(controller: "Table")">
+                <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-server"></i></span><span class="pcoded-mtext">Tables</span></a>
+                <ul class="pcoded-submenu">
+                    <li class="@Html.IsSelected(controller: "Table", action: Pages.Bootstrap.Value)"><a href="/Table/@Pages.Bootstrap.Value" class="">@Pages.Bootstrap.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Table", action: Pages.Datatable.Value)"><a href="/Table/@Pages.Datatable.Value" class="">@Pages.Datatable.Value</a></li>
+                </ul>
+            </li>
+            <li class="nav-item pcoded-menu-caption">
+                <label>Charts</label>
+            </li>
+            <li class="nav-item pcoded-hasmenu @Html.IsSelected(controller: "Chart")">
+                <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-pie-chart"></i></span><span class="pcoded-mtext">Charts</span></a>
+                <ul class="pcoded-submenu">
+                    <li class="@Html.IsSelected(controller: "Chart", action: Pages.AmChart.Value)"><a href="/Chart/@Pages.AmChart.Value" class="">@Pages.AmChart.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Chart", action: Pages.ChartJS.Value)"><a href="/Chart/@Pages.ChartJS.Value" class="">@Pages.ChartJS.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Chart", action: Pages.EChart.Value)"><a href="/Chart/@Pages.EChart.Value" class="">@Pages.EChart.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Chart", action: Pages.Google.Value)"><a href="/Chart/@Pages.Google.Value" class="">@Pages.Google.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Chart", action: Pages.Highchart.Value)"><a href="/Chart/@Pages.Highchart.Value" class="">@Pages.Highchart.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Chart", action: Pages.Knob.Value)"><a href="/Chart/@Pages.Knob.Value" class="">@Pages.Knob.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Chart", action: Pages.Morris.Value)"><a href="/Chart/@Pages.Morris.Value" class="">@Pages.Morris.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Chart", action: Pages.Nvd3.Value)"><a href="/Chart/@Pages.Nvd3.Value" class="">@Pages.Nvd3.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Chart", action: Pages.Peity.Value)"><a href="/Chart/@Pages.Peity.Value" class="">@Pages.Peity.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Chart", action: Pages.Radial.Value)"><a href="/Chart/@Pages.Radial.Value" class="">@Pages.Radial.Value</a></li>
+                </ul>
+            </li>
+            <li class="nav-item pcoded-menu-caption">
+                <label>Maps</label>
+            </li>
+            <li class="nav-item pcoded-hasmenu @Html.IsSelected(controller: "Map")">
+                <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-map"></i></span><span class="pcoded-mtext">Maps</span></a>
+                <ul class="pcoded-submenu">
+                    <li class="@Html.IsSelected(controller: "Map", action: Pages.GoogleMap.Value)"><a href="/Map/@Pages.GoogleMap.Value" class="">@Pages.GoogleMap.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Map", action: Pages.Vector.Value)"><a href="/Map/@Pages.Vector.Value" class="">@Pages.Vector.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Map", action: Pages.GMapSearch.Value)"><a href="/Map/@Pages.GMapSearch.Value" class="">@Pages.GMapSearch.Value</a></li>
+                </ul>
+            </li>
+            <li class="nav-item pcoded-menu-caption">
+                <label>Auth</label>
+            </li>
+            <li class="nav-item pcoded-hasmenu @Html.IsSelected(controller: "Auth")">
+                <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-lock"></i></span><span class="pcoded-mtext">Authentication</span><span class="pcoded-badge label label-danger">NEW</span></a>
+                <ul class="pcoded-submenu">
+                    <li class="@Html.IsSelected(controller: "Auth", action: Pages.SignUp.Value)"><a target="_blank" href="/Auth/@Pages.SignUp.Value" class="">@Pages.SignUp.Value</a><span class="pcoded-badge label label-info">NEW</span></li>
+                    <li class="@Html.IsSelected(controller: "Auth", action: Pages.SignUp2.Value)"><a target="_blank" href="/Auth/@Pages.SignUp2.Value" class="">@Pages.SignUp2.Value</a><span class="pcoded-badge label label-info">NEW</span></li>
+                    <li class="@Html.IsSelected(controller: "Auth", action: Pages.SignUp3.Value)"><a target="_blank" href="/Auth/@Pages.SignUp3.Value" class="">@Pages.SignUp3.Value</a><span class="pcoded-badge label label-info">NEW</span></li>
+                    <li class="@Html.IsSelected(controller: "Auth", action: Pages.SignUp4.Value)"><a target="_blank" href="/Auth/@Pages.SignUp4.Value" class="">@Pages.SignUp4.Value</a><span class="pcoded-badge label label-info">NEW</span></li>
+                    <li class="@Html.IsSelected(controller: "Auth", action: Pages.SignUp5.Value)"><a target="_blank" href="/Auth/@Pages.SignUp5.Value" class="">@Pages.SignUp5.Value</a><span class="pcoded-badge label label-info">NEW</span></li>
+                    <li class="@Html.IsSelected(controller: "Auth", action: Pages.SignIn.Value)"><a target="_blank" href="/Auth/@Pages.SignIn.Value" class="">@Pages.SignIn.Value</a><span class="pcoded-badge label label-info">NEW</span></li>
+                    <li class="@Html.IsSelected(controller: "Auth", action: Pages.SignIn2.Value)"><a target="_blank" href="/Auth/@Pages.SignIn2.Value" class="">@Pages.SignIn2.Value</a><span class="pcoded-badge label label-info">NEW</span></li>
+                    <li class="@Html.IsSelected(controller: "Auth", action: Pages.SignIn3.Value)"><a target="_blank" href="/Auth/@Pages.SignIn3.Value" class="">@Pages.SignIn3.Value</a><span class="pcoded-badge label label-info">NEW</span></li>
+                    <li class="@Html.IsSelected(controller: "Auth", action: Pages.SignIn4.Value)"><a target="_blank" href="/Auth/@Pages.SignIn4.Value" class="">@Pages.SignIn4.Value</a><span class="pcoded-badge label label-info">NEW</span></li>
+                    <li class="@Html.IsSelected(controller: "Auth", action: Pages.SignIn5.Value)"><a target="_blank" href="/Auth/@Pages.SignIn5.Value" class="">@Pages.SignIn5.Value</a><span class="pcoded-badge label label-info">NEW</span></li>
+                    <li class="@Html.IsSelected(controller: "Auth", action: Pages.ResetPassword.Value)"><a target="_blank" href="/Auth/@Pages.ResetPassword.Value" class="">@Pages.ResetPassword.Value</a><span class="pcoded-badge label label-info">NEW</span></li>
+                    <li class="@Html.IsSelected(controller: "Auth", action: Pages.ResetPassword2.Value)"><a target="_blank" href="/Auth/@Pages.ResetPassword2.Value" class="">@Pages.ResetPassword2.Value</a><span class="pcoded-badge label label-info">NEW</span></li>
+                    <li class="@Html.IsSelected(controller: "Auth", action: Pages.ResetPassword3.Value)"><a target="_blank" href="/Auth/@Pages.ResetPassword3.Value" class="">@Pages.ResetPassword3.Value</a><span class="pcoded-badge label label-info">NEW</span></li>
+                    <li class="@Html.IsSelected(controller: "Auth", action: Pages.ResetPassword4.Value)"><a target="_blank" href="/Auth/@Pages.ResetPassword4.Value" class="">@Pages.ResetPassword4.Value</a><span class="pcoded-badge label label-info">NEW</span></li>
+                    <li class="@Html.IsSelected(controller: "Auth", action: Pages.ResetPassword5.Value)"><a target="_blank" href="/Auth/@Pages.ResetPassword5.Value" class="">@Pages.ResetPassword5.Value</a><span class="pcoded-badge label label-info">NEW</span></li>
+                    <li class="@Html.IsSelected(controller: "Auth", action: Pages.ChangePassword.Value)"><a target="_blank" href="/Auth/@Pages.ChangePassword.Value" class="">@Pages.ChangePassword.Value</a><span class="pcoded-badge label label-info">NEW</span></li>
+                    <li class="@Html.IsSelected(controller: "Auth", action: Pages.PersonalInformation.Value)"><a target="_blank" href="/Auth/@Pages.PersonalInformation.Value" class="">@Pages.PersonalInformation.Value</a><span class="pcoded-badge label label-info">NEW</span></li>
+                    <li class="@Html.IsSelected(controller: "Auth", action: Pages.ProfileSettings.Value)"><a target="_blank" href="/Auth/@Pages.ProfileSettings.Value" class="">@Pages.ProfileSettings.Value</a><span class="pcoded-badge label label-info">NEW</span></li>
+                    <li class="@Html.IsSelected(controller: "Auth", action: Pages.MapForm.Value)"><a target="_blank" href="/Auth/@Pages.MapForm.Value" class="">@Pages.MapForm.Value</a><span class="pcoded-badge label label-info">NEW</span></li>
+                    <li class="@Html.IsSelected(controller: "Auth", action: Pages.Subscribe.Value)"><a target="_blank" href="/Auth/@Pages.Subscribe.Value" class="">@Pages.Subscribe.Value</a><span class="pcoded-badge label label-info">NEW</span></li>
+                </ul>
+            </li>
+            <li class="nav-item pcoded-menu-caption">
+                <label>Maintenance</label>
+            </li>
+            <li class="nav-item pcoded-hasmenu @Html.IsSelected(controller: "Maintenance")">
+                <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-sliders"></i></span><span class="pcoded-mtext">Maintenance</span></a>
+                <ul class="pcoded-submenu">
+                    <li class="@Html.IsSelected(controller: "Maintenance", action: Pages.Error.Value)"><a href="/Maintenance/@Pages.Error.Value" class="">@Pages.Error.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Maintenance", action: Pages.ComingSoon.Value)"><a target="_blank" href="/Maintenance/@Pages.ComingSoon.Value" class="">@Pages.ComingSoon.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Maintenance", action: Pages.OfflineUI.Value)"><a target="_blank" href="/Maintenance/@Pages.OfflineUI.Value" class="">@Pages.OfflineUI.Value</a></li>
+                </ul>
+            </li>
+            <li class="nav-item pcoded-menu-caption">
+                <label>App</label>
+            </li>
+            <li class="nav-item  @Html.IsSelected(controller: "Message")"><a href="/Message/@Pages.Message.Value" class="nav-link"><span class="pcoded-micon"><i class="feather icon-aperture"></i></span><span class="pcoded-mtext">Message</span></a></li>
+            <li class="nav-item pcoded-hasmenu @Html.IsSelected(controller: "Task")">
+                <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-clipboard"></i></span><span class="pcoded-mtext">Task</span></a>
+                <ul class="pcoded-submenu">
+                    <li class="@Html.IsSelected(controller: "Task", action: Pages.TaskList.Value)"><a href="/Task/@Pages.TaskList.Value" class="">@Pages.TaskList.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Task", action: Pages.TaskBoard.Value)"><a href="/Task/@Pages.TaskBoard.Value" class="">@Pages.TaskBoard.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Task", action: Pages.TaskDetail.Value)"><a href="/Task/@Pages.TaskDetail.Value" class="">@Pages.TaskDetail.Value</a></li>
+                </ul>
+            </li>
+            <li class="nav-item pcoded-hasmenu @Html.IsSelected(controller: "Todo")">
+                <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-check-square"></i></span><span class="pcoded-mtext">Todo</span></a>
+                <ul class="pcoded-submenu">
+                    <li class="@Html.IsSelected(controller: "Todo", action: Pages.Todo.Value)"><a href="/Todo/@Pages.Todo.Value" class="">@Pages.Todo.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Todo", action: Pages.Notes.Value)"><a href="/Todo/@Pages.Notes.Value" class="">@Pages.Notes.Value</a></li>
+                </ul>
+            </li>
+            <li class="nav-item pcoded-hasmenu @Html.IsSelected(controller: "Gallery")">
+                <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-image"></i></span><span class="pcoded-mtext">Gallery</span></a>
+                <ul class="pcoded-submenu">
+                    <li class="@Html.IsSelected(controller: "Gallery", action: Pages.Grid.Value)"><a href="/Gallery/@Pages.Grid.Value" class="">@Pages.Grid.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Gallery", action: Pages.Masonry.Value)"><a href="/Gallery/@Pages.Masonry.Value" class="">@Pages.Masonry.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Gallery", action: Pages.GridAdvance.Value)"><a href="/Gallery/@Pages.GridAdvance.Value" class="">@Pages.GridAdvance.Value</a></li>
+                </ul>
+            </li>
+            <li class="nav-item pcoded-hasmenu @Html.IsSelected(controller: "Editor")">
+                <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-file-plus"></i></span><span class="pcoded-mtext">Editor</span></a>
+                <ul class="pcoded-submenu">
+                    <li class="@Html.IsSelected(controller: "Editor", action: Pages.CKEditor.Value)"><a href="/Editor/@Pages.CKEditor.Value" class="">@Pages.CKEditor.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Editor", action: Pages.CKEditorBallon.Value)"><a href="/Editor/@Pages.CKEditorBallon.Value" class="">@Pages.CKEditorBallon.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Editor", action: Pages.CKEditorInline.Value)"><a href="/Editor/@Pages.CKEditorInline.Value" class="">@Pages.CKEditorInline.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Editor", action: Pages.CKEditorDocument.Value)"><a href="/Editor/@Pages.CKEditorDocument.Value" class="">@Pages.CKEditorDocument.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Editor", action: Pages.TinyMCE.Value)"><a href="/Editor/@Pages.TinyMCE.Value" class="">@Pages.TinyMCE.Value</a></li>
+                </ul>
+            </li>
+            <li class="nav-item pcoded-hasmenu @Html.IsSelected(controller: "Invoice")">
+                <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-file-minus"></i></span><span class="pcoded-mtext">Invoice</span></a>
+                <ul class="pcoded-submenu">
+                    <li class="@Html.IsSelected(controller: "Invoice", action: Pages.Invoice.Value)"><a href="/Invoice/@Pages.Invoice.Value" class="">@Pages.Invoice.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Invoice", action: Pages.InvoiceSummary.Value)"><a href="/Invoice/@Pages.InvoiceSummary.Value" class="">@Pages.InvoiceSummary.Value</a></li>
+                    <li class="@Html.IsSelected(controller: "Invoice", action: Pages.InvoiceList.Value)"><a href="/Invoice/@Pages.InvoiceList.Value" class="">@Pages.InvoiceList.Value</a></li>
+                </ul>
+            </li>
+            <li class="nav-item  @Html.IsSelected(controller: "Calendar")"><a href="/Calendar/@Pages.FullCalendar.Value" class="nav-link"><span class="pcoded-micon"><i class="feather icon-calendar"></i></span><span class="pcoded-mtext">Full Calendar</span></a></li>
+            <li class="nav-item  @Html.IsSelected(controller: "Upload")"><a href="/Upload/@Pages.FileUpload.Value" class="nav-link"><span class="pcoded-micon"><i class="feather icon-upload-cloud"></i></span><span class="pcoded-mtext">File Upload</span></a></li>
+        </ul>
+    </div>
+</div>

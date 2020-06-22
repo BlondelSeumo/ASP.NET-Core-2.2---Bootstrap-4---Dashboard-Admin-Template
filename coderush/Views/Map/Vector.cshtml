@@ -1,0 +1,138 @@
+﻿
+@{
+    ViewData["Title"] = "Vector";
+}
+
+<!-- [ Main Content ] start -->
+<section class="pcoded-main-container">
+    <div class="pcoded-wrapper">
+        <div class="pcoded-content">
+            <div class="pcoded-inner-content">
+                <!-- [ breadcrumb ] start -->
+                <div class="page-header">
+                    <div class="page-block">
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <div class="page-header-title">
+                                    <h5 class="m-b-10">Vector Map</h5>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/Dashboard/@Pages.Dashboard1.Value"><i class="feather icon-home"></i></a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Maps</a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Vector Map</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- [ breadcrumb ] end -->
+                <div class="main-body">
+                    <div class="page-wrapper">
+                        <!-- [ Main Content ] start -->
+                        <div class="row">
+                            <!-- [ Basic-Map ] start -->
+                            <div class="col-md-6 col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Basic Map With Markers</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div id="world-map-markers" class="set-map" style="height:400px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ Basic-Map ] end -->
+                            <!-- [ India-Map ] start -->
+                            <div class="col-md-6 col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>India Map</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div id="india" class="set-map" style="height:400px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ India-Map ] end -->
+                            <!-- [ Asia-Map ] start -->
+                            <div class="col-md-6 col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Asia Map</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div id="asia" class="set-map" style="height:400px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ Asia-Map ] end -->
+                            <!-- [ uk-Map ] start -->
+                            <div class="col-md-6 col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Uk Map</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div id="uk" class="set-map" style="height:400px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ uk-Map ] end -->
+                            <!-- [ Canada-Map ] start -->
+                            <div class="col-md-6 col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Canada Map</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div id="canada" class="set-map" style="height:400px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ Canada-Map ] end -->
+                            <!-- [ USA-Map ] start -->
+                            <div class="col-md-6 col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>USA Map</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div id="usa" class="set-map" style="height:400px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ USA-Map ] end -->
+                        </div>
+                        <!-- [ Main Content ] end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- [ Main Content ] end -->
+
+@section Styles{
+    <!-- map-vector css -->
+    <link rel="stylesheet" href="~/assets/plugins/vector-maps/css/jquery-jvectormap-2.0.2.css">
+}
+
+@section Scripts{
+    <!-- vector-map Js -->
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="~/assets/plugins/vector-maps/js/gdp-data.js"></script>
+    <script src="~/assets/plugins/vector-maps/js/jquery-jvectormap-2.0.2.min.js"></script>
+    <script src="~/assets/plugins/vector-maps/js/jquery-jvectormap-asia-mill.js"></script>
+    <script src="~/assets/plugins/vector-maps/js/jquery-jvectormap-au-mill.js"></script>
+    <script src="~/assets/plugins/vector-maps/js/jquery-jvectormap-ca-lcc.js"></script>
+    <script src="~/assets/plugins/vector-maps/js/jquery-jvectormap-de-mill.js"></script>
+    <script src="~/assets/plugins/vector-maps/js/jquery-jvectormap-in-mill.js"></script>
+    <script src="~/assets/plugins/vector-maps/js/jquery-jvectormap-uk-mill-en.js"></script>
+    <script src="~/assets/plugins/vector-maps/js/jquery-jvectormap-us-aea-en.js"></script>
+    <script src="~/assets/plugins/vector-maps/js/jquery-jvectormap-us-il-chicago-mill-en.js"></script>
+    <script src="~/assets/plugins/vector-maps/js/jquery-jvectormap-world-mill-en.js"></script>
+
+    <script src="~/assets/js/pages/map-vector.js"></script>
+}
+

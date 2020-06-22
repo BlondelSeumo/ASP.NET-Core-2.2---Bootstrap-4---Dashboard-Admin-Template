@@ -1,0 +1,151 @@
+﻿
+@{
+    ViewData["Title"] = "Gridstack";
+}
+
+
+
+
+<!-- [ Main Content ] start -->
+<section class="pcoded-main-container">
+    <div class="pcoded-wrapper">
+        <div class="pcoded-content">
+            <div class="pcoded-inner-content">
+                <!-- [ breadcrumb ] start -->
+                <div class="page-header">
+                    <div class="page-block">
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <div class="page-header-title">
+                                    <h5 class="m-b-10">Grid Stack</h5>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/Dashboard/@Pages.Dashboard1.Value"><i class="feather icon-home"></i></a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Advance Components</a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Grid Stack</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- [ breadcrumb ] end -->
+                <div class="main-body stack-mobile">
+                    <div class="page-wrapper">
+                        <!-- [ Main Content ] start -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="alert alert-primary" role="alert">
+                                    <p>Use our extra helper file for quick setup Advance Components in your page - <a href="/ElementAdvance/@Pages.AdvancePackage.Value" target="_blank" class="alert-link">CHECKOUT</a></p>
+                                    <label class="text-muted">Copy/paste source code in your page in just couples of seconds.</label>
+                                </div>
+                            </div>
+                            <!-- [ gridstack ] start -->
+                            <div class="col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Grid Stack</h5>
+                                        <div class="card-header-right">
+                                            <div class="btn-group card-option">
+                                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="feather icon-more-horizontal"></i>
+                                                </button>
+                                                <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                    <li class="dropdown-item full-card"><a href="#!"><span><i class="feather icon-maximize"></i> maximize</span><span style="display:none"><i class="feather icon-minimize"></i> Restore</span></a></li>
+                                                    <li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i> collapse</span><span style="display:none"><i class="feather icon-plus"></i> expand</span></a></li>
+                                                    <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                    <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-block">
+                                        <h5 class="d-inline">Float Grid Demo</h5>
+                                        <a class="btn btn-primary float-right" id="add-new-widget" href="#!">Add Widget</a>
+                                        <div class="clearfix"></div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="trash"> </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="grid-stack" data-gs-width="12" data-gs-animate="yes">
+                                            <div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="4" data-gs-height="2">
+                                                <div class="grid-stack-item-content">1</div>
+                                            </div>
+                                            <div class="grid-stack-item" data-gs-x="4" data-gs-y="0" data-gs-width="4" data-gs-height="4">
+                                                <div class="grid-stack-item-content">2</div>
+                                            </div>
+                                            <div class="grid-stack-item" data-gs-x="8" data-gs-y="0" data-gs-width="2" data-gs-height="2" data-gs-min-width="2" data-gs-no-resize="yes">
+                                                <div class="grid-stack-item-content d-flex align-items-center justify-content-center drg-widget">
+                                                    <div class="">
+                                                        <span class="feather icon-move mr-2 f-64"></span>
+                                                        <h5 class="text-white">Drag me! </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="grid-stack-item" data-gs-x="10" data-gs-y="0" data-gs-width="2" data-gs-height="2">
+                                                <div class="grid-stack-item-content">4</div>
+                                            </div>
+                                            <div class="grid-stack-item" data-gs-x="0" data-gs-y="2" data-gs-width="2" data-gs-height="2">
+                                                <div class="grid-stack-item-content">5</div>
+                                            </div>
+                                            <div class="grid-stack-item" data-gs-x="2" data-gs-y="2" data-gs-width="2" data-gs-height="4">
+                                                <div class="grid-stack-item-content">6</div>
+                                            </div>
+                                            <div class="grid-stack-item" data-gs-x="8" data-gs-y="2" data-gs-width="4" data-gs-height="2">
+                                                <div class="grid-stack-item-content">7</div>
+                                            </div>
+                                            <div class="grid-stack-item" data-gs-x="0" data-gs-y="4" data-gs-width="2" data-gs-height="2">
+                                                <div class="grid-stack-item-content">8</div>
+                                            </div>
+                                            <div class="grid-stack-item" data-gs-x="4" data-gs-y="4" data-gs-width="4" data-gs-height="2">
+                                                <div class="grid-stack-item-content">9</div>
+                                            </div>
+                                            <div class="grid-stack-item" data-gs-x="8" data-gs-y="4" data-gs-width="2" data-gs-height="2">
+                                                <div class="grid-stack-item-content">10</div>
+                                            </div>
+                                            <div class="grid-stack-item" data-gs-x="10" data-gs-y="4" data-gs-width="2" data-gs-height="2">
+                                                <div class="grid-stack-item-content">11</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ gridstack ] end -->
+                        </div>
+                        <!-- [ Main Content ] end -->
+                    </div>
+                    <div class="error-block">
+                        <div class="card text-center">
+                            <div class="card-block">
+                                <i class="feather icon-alert-triangle text-c-yellow f-50"></i>
+                                <h4 class="f-w-600 m-t-10">Not supported</h4>
+                                <p class="text-muted m-b-0">Gridstack not supported in this device</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- [ Main Content ] end -->
+
+
+@section Styles{
+    <!-- gridstack css -->
+    <link rel="stylesheet" href="~/assets/plugins/gridstack/css/gridstack.min.css">
+    <!-- gridstack-custom css -->
+    <link rel="stylesheet" href="~/assets/css/pages/gridstack.css">
+}
+
+@section Scripts{
+    <!-- gridstack Js -->
+    <script src="~/assets/plugins/jquery-ui/js/jquery-ui.js"></script>
+    <script src="~/assets/plugins/gridstack/js/lodash.min.js"></script>
+    <script src="~/assets/plugins/gridstack/js/gridstack.min.js"></script>
+    <script src="~/assets/plugins/gridstack/js/gridstack.jQueryUI.min.js"></script>
+    <script src="~/assets/js/pages/ac-gridstack.js"></script>
+}
+

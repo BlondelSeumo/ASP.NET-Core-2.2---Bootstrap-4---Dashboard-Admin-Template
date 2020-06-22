@@ -1,0 +1,125 @@
+﻿
+@{
+    ViewData["Title"] = "Slider";
+}
+
+
+
+<!-- [ Main Content ] start -->
+<section class="pcoded-main-container">
+    <div class="pcoded-wrapper">
+        <div class="pcoded-content">
+            <div class="pcoded-inner-content">
+                <!-- [ breadcrumb ] start -->
+                <div class="page-header">
+                    <div class="page-block">
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <div class="page-header-title">
+                                    <h5 class="m-b-10">Slider</h5>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/Dashboard/@Pages.Dashboard1.Value"><i class="feather icon-home"></i></a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Advance Components</a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Slider</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- [ breadcrumb ] end -->
+                <div class="main-body">
+                    <div class="page-wrapper">
+                        <!-- [ Main Content ] start -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="alert alert-primary" role="alert">
+                                    <p>Use our extra helper file for quick setup Advance Components in your page - <a href="/ElementAdvance/@Pages.AdvancePackage.Value" target="_blank" class="alert-link">CHECKOUT</a></p>
+                                    <label class="text-muted">Copy/paste source code in your page in just couples of seconds.</label>
+                                </div>
+                            </div>
+                            <!-- [ Slider ] start -->
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Slider1</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div class="slider1 owl-carousel owl-theme">
+                                            <div class="item">
+                                                <img src="~/assets/images/slider/img-slide-1.jpg" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                <img src="~/assets/images/slider/img-slide-2.jpg" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                <img src="~/assets/images/slider/img-slide-3.jpg" alt="" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Only Nav</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div class="slider2 owl-carousel owl-theme">
+                                            <div class="item">
+                                                <img src="~/assets/images/slider/img-slide-1.jpg" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                <img src="~/assets/images/slider/img-slide-2.jpg" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                <img src="~/assets/images/slider/img-slide-3.jpg" alt="" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Only Dots</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div class="slider3 owl-carousel owl-theme">
+                                            <div class="item">
+                                                <img src="~/assets/images/slider/img-slide-1.jpg" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                <img src="~/assets/images/slider/img-slide-2.jpg" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="item">
+                                                <img src="~/assets/images/slider/img-slide-3.jpg" alt="" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ slider ] end -->
+                        </div>
+                        <!-- [ Main Content ] end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- [ Main Content ] end -->
+
+
+@section Styles{
+    <!-- owl-carousel css -->
+    <link rel="stylesheet" href="~/assets/plugins/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/assets/plugins/owl-carousel/css/owl.theme.default.min.css">
+}
+
+@section Scripts{
+    <!-- owl-carousel Js -->
+    <script src="~/assets/plugins/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="~/assets/js/pages/ac-slider.js"></script>
+}
+

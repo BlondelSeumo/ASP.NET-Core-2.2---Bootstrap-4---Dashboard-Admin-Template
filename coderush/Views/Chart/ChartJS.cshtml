@@ -1,0 +1,180 @@
+﻿
+@{
+    ViewData["Title"] = "ChartJS";
+}
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-wrapper">
+        <div class="pcoded-content">
+            <div class="pcoded-inner-content">
+                <!-- [ breadcrumb ] start -->
+                <div class="page-header">
+                    <div class="page-block">
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <div class="page-header-title">
+                                    <h5 class="m-b-10">Chart js</h5>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/Dashboard/@Pages.Dashboard1.Value"><i class="feather icon-home"></i></a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Chart</a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Chart js</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- [ breadcrumb ] end -->
+                <div class="main-body">
+                    <div class="page-wrapper">
+                        <!-- [ Main Content ] start -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="alert alert-primary" role="alert">
+                                    <p>Use our extra helper file for quick setup Charts in your page - <a href="/Chart/@Pages.ChartPackage.Value" target="_blank" class="alert-link">CHECKOUT</a></p>
+                                    <label class="text-muted">Copy/paste source code in your page in just couples of seconds.</label>
+                                </div>
+                            </div>
+                            <!-- [ chartjs-chart ] start -->
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Bar Chart</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <canvas id="chart-bar-1" style="width: 100%; height: 300px"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Bar [ Stacked ] Chart</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <canvas id="chart-bar-2" style="width: 100%; height: 300px"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Bar [ Horizontal ] Chart</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <canvas id="chart-bar-3" style="width: 100%; height: 300px"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Line [ Interpolation Mode ] Chart</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <canvas id="chart-line-1" style="width: 100%; height: 300px"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Area [ Fill: 'origin' ] Chart</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <canvas id="chart-area-2" style="width: 100%; height: 300px"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Area [ Fill: 'end' ] Chart</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <canvas id="chart-area-3" style="width: 100%; height: 300px"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Area Chart</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <canvas id="chart-area-1" style="width: 100%; height: 300px"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Radar [ Area ] Chart</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <canvas id="chart-radar-1" style="width: 100%; height: 300px"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Radar [ Area ] Chart</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <canvas id="chart-radar-2" style="width: 100%; height: 300px"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Radar [ Area ] Chart</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <canvas id="chart-radar-3" style="width: 100%; height: 300px"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Pie Chart</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <canvas id="chart-pie-1" style="width: 100%; height: 300px"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Donut Chart</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <canvas id="chart-donut-1" style="width: 100%; height: 300px"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ chartjs-chart ] end -->
+                        </div>
+                        <!-- [ Main Content ] end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@section Styles{
+
+}
+
+@section Scripts{
+    <!-- chartjs js -->
+    <script src="~/assets/plugins/chart-chartjs/js/Chart.min.js"></script>
+    <script src="~/assets/js/pages/chart-chart-custom.js"></script>
+}
+

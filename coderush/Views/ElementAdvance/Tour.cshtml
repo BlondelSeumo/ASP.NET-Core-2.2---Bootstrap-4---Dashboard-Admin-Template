@@ -1,0 +1,108 @@
+﻿
+@{
+    ViewData["Title"] = "Tour";
+}
+
+
+
+<!-- [ Main Content ] start -->
+<section class="pcoded-main-container">
+    <div class="pcoded-wrapper">
+        <div class="pcoded-content">
+            <div class="pcoded-inner-content">
+                <!-- [ breadcrumb ] start -->
+                <div class="page-header">
+                    <div class="page-block">
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <div class="page-header-title">
+                                    <h5 class="m-b-10">Tour</h5>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/Dashboard/@Pages.Dashboard1.Value"><i class="feather icon-home"></i></a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Advance Components</a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Tour</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- [ breadcrumb ] end -->
+                <div class="main-body tour-mobile">
+                    <div class="page-wrapper">
+                        <!-- [ Main Content ] start -->
+                        <div class="row">
+                            <!-- [ tour ] start -->
+                            <div class="col-sm-12">
+                                <div class="alert alert-primary" role="alert">
+                                    <p>Use our extra helper file for quick setup Advance Components in your page - <a href="/ElementAdvance/@Pages.AdvancePackage.Value" target="_blank" class="alert-link">CHECKOUT</a></p>
+                                    <label class="text-muted">Copy/paste source code in your page in just couples of seconds.</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="card step1">
+                                    <div class="card-header">
+                                        <h5>Hello card</h5>
+                                        <div class="card-header-right">
+                                            <div class="btn-group card-option step2">
+                                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="feather icon-more-vertical"></i></button>
+                                                <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                    <li class="dropdown-item full-card"><a href="#!"><span><i class="feather icon-maximize"></i> maximize</span><span style="display:none"><i class="feather icon-minimize"></i> Restore</span></a></li>
+                                                    <li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i> collapse</span><span style="display:none"><i class="feather icon-plus"></i> expand</span></a></li>
+                                                    <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                    <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-block">
+                                        <h1>H1 Go Jazz</h1>
+                                        <h2>H2 Go Jazz</h2>
+                                        <h3>H3 Go Jazz</h3>
+                                        <h4>H4 Go Jazz</h4>
+                                        <h5>H5 Go Jazz</h5>
+                                        <h6>H6 Go Jazz</h6>
+                                        <p>p Go Jazz</p>
+                                        <strong>p Go Jazz</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ tour ] end -->
+                        </div>
+                        <!-- [ Main Content ] end -->
+                    </div>
+                    <div class="error-block">
+                        <div class="card text-center">
+                            <div class="card-block">
+                                <i class="feather icon-alert-triangle text-c-yellow f-50"></i>
+                                <h4 class="f-w-600 m-t-10">Not supported</h4>
+                                <p class="text-muted m-b-0">Tour not supported in this device</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- [ Main Content ] end -->
+
+
+@section Styles{
+    <!-- enjoyhint css -->
+    <link rel="stylesheet" href="~/assets/plugins/enjoyhint/css/enjoyhint.css">
+    <style>
+        .header-chat,
+        .header-user-list {
+            z-index: 1025;
+        }
+    </style>
+}
+
+@section Scripts{
+    <!-- tour Js -->
+    <script src="~/assets/plugins/enjoyhint/js/kinetic-v5.1.0.min.js"></script>
+    <script src="~/assets/plugins/enjoyhint/js/jquery.enjoyhint.js"></script>
+    <script src="~/assets/js/pages/ac-tour.js"></script>
+}
+

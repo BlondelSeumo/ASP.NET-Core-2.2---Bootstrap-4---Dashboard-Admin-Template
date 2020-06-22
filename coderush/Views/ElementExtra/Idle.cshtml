@@ -1,0 +1,99 @@
+﻿
+@{
+    ViewData["Title"] = "Idle";
+}
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-wrapper">
+        <div class="pcoded-content">
+            <div class="pcoded-inner-content">
+                <!-- [ breadcrumb ] start -->
+                <div class="page-header">
+                    <div class="page-block">
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <div class="page-header-title">
+                                    <h5 class="m-b-10">Idle Timeout</h5>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/Dashboard/@Pages.Dashboard1.Value"><i class="feather icon-home"></i></a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Extra Components</a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Idle Timeout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- [ breadcrumb ] end -->
+                <div class="main-body">
+                    <div class="page-wrapper">
+                        <!-- [ Main Content ] start -->
+                        <div class="row">
+                            <!-- [ session-idle-timeout ] start -->
+                            <div class="col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Session Idle Timeout</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <p class="m-0">
+                                            Current settings allow you to track user inactivity and launch a warning dialog in a fixed amount of time after latest user activity. In this demo warning dialog appears <strong>after 5 seconds</strong> of latest user activity.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ session-idle-timeout ] end -->
+                        </div>
+                        <!-- [ Main Content ] end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@section Styles{
+    <!-- notification css -->
+    <link rel="stylesheet" href="~/assets/plugins/notification/css/notification.min.css">
+}
+
+@section Scripts{
+    <!-- session-idle Timeout js -->
+    <script src="~/assets/plugins/session-idle-timeout/js/session_timeout.min.js"></script>
+    <script src="~/assets/js/pages/session-idle-Timeout-custom.js"></script>
+
+    <!-- notification Js -->
+    <script src="~/assets/plugins/notification/js/bootstrap-growl.min.js"></script>
+
+    <script>
+        $(window).on('load', function () {
+            function notify(message, type) {
+                $.growl({
+                    message: message
+                }, {
+                        type: type,
+                        allow_dismiss: false,
+                        label: 'Cancel',
+                        className: 'btn-xs btn-inverse',
+                        placement: {
+                            from: 'top',
+                            align: 'right'
+                        },
+                        delay: 2500,
+                        animate: {
+                            enter: 'animated fadeInRight',
+                            exit: 'animated fadeOutRight'
+                        },
+                        offset: {
+                            x: 30,
+                            y: 30
+                        }
+                    });
+            };
+            notify('Welcome to Idle Timeout page', 'inverse');
+        });
+    </script>
+}
+

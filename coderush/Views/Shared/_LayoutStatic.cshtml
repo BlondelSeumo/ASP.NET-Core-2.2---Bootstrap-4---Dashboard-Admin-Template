@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GoJazz - .NET Admin Template - @ViewData["Title"]</title>
+    <!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 11]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Favicon icon -->
+    <link rel="icon" href="~/assets/images/favicon.ico" type="image/x-icon">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="~/assets/fonts/fontawesome/css/fontawesome-all.min.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="~/assets/plugins/animation/css/animate.min.css">
+    <!-- vendor css -->
+    <link rel="stylesheet" href="~/assets/css/style.css">
+
+    @RenderSection("Styles", false)
+
+</head>
+
+<body>
+
+    <!-- [ Pre-loader ] start -->
+    @await Html.PartialAsync("_Preloader")
+    <!-- [ Pre-loader ] End -->
+
+    <!-- [ navigation menu ] start: .menupos-static is for static layout  -->
+    <nav class="pcoded-navbar menupos-static">
+        @await Html.PartialAsync("_Navigation")
+    </nav>    
+    <!-- [ navigation menu ] end -->
+
+    <!-- [ Header ] start -->
+    <header class="navbar pcoded-header navbar-expand-lg navbar-light">
+        @await Html.PartialAsync("_Header")
+    </header>
+    <!-- [ Header ] end -->
+
+    @await Html.PartialAsync("_Chat")
+
+    <!-- [ Main Content ] start -->
+    @RenderBody()
+    <!-- [ Main Content ] end -->
+
+    <!-- Warning Section start -->
+    <!-- Older IE warning message -->
+    @await Html.PartialAsync("_IEWarningMessage")
+    <!-- Warning Section Ends -->
+    <!-- Required Js -->
+    <script src="~/assets/js/vendor-all.min.js"></script>
+    <script src="~/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/assets/js/pcoded.min.js"></script>
+
+    @RenderSection("Scripts", false)
+
+</body>
+
+</html>

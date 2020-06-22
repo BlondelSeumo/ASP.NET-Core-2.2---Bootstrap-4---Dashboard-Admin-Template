@@ -1,0 +1,168 @@
+﻿
+@{
+    ViewData["Title"] = "Datepicker";
+}
+
+
+
+<!-- [ Main Content ] start -->
+<section class="pcoded-main-container">
+    <div class="pcoded-wrapper">
+        <div class="pcoded-content">
+            <div class="pcoded-inner-content">
+                <!-- [ breadcrumb ] start -->
+                <div class="page-header">
+                    <div class="page-block">
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <div class="page-header-title">
+                                    <h5 class="m-b-10">Datepicker</h5>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/Dashboard/@Pages.Dashboard1.Value"><i class="feather icon-home"></i></a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Advance components</a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Datepicker</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- [ breadcrumb ] end -->
+                <div class="main-body">
+                    <div class="page-wrapper">
+                        <!-- [ Main Content ] start -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="alert alert-primary" role="alert">
+                                    <p>Use our extra helper file for quick setup Advance Components in your page - <a href="/ElementAdvance/@Pages.AdvancePackage.Value" target="_blank" class="alert-link">CHECKOUT</a></p>
+                                    <label class="text-muted">Copy/paste source code in your page in just couples of seconds.</label>
+                                </div>
+                            </div>
+                            <!-- [ bootstrap-datetimepicker ] start -->
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Days of Week Disabled</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <input type="text" class="form-control" id="d_week">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Days of Week Highlighted</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <input type="text" class="form-control" id="d_highlight">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>AutoClose</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <input type="text" class="form-control" id="d_auto">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>DatesDisabled</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <input type="text" class="form-control" id="d_disable">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Toggle Active</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <input type="text" class="form-control" id="d_toggle">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Today Highlight</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <input type="text" class="form-control" id="d_today">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Calendar Weeks</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <input type="text" class="form-control" id="disp_week">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Date Range</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div class="input-daterange input-group" id="datepicker_range">
+                                            <input type="text" class="form-control text-left" placeholder="Start date" name="start" />
+                                            <input type="text" class="form-control text-right" placeholder="End date" name="end" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ bootstrap-datetimepicker ] End -->
+                        </div>
+                        <!-- [ Main Content ] end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- [ Main Content ] end -->
+
+
+
+@section Styles{
+    <!-- Bootstrap datetimepicker css -->
+    <link rel="stylesheet" href="~/assets/plugins/bootstrap-datetimepicker/css/bootstrap-datepicker3.min.css">
+    <style>
+        .datepicker > .datepicker-days {
+            display: block;
+        }
+
+        ol.linenums {
+            margin: 0 0 0 -8px;
+        }
+    </style>
+}
+
+@section Scripts{
+    
+    <script>
+        var page = {
+            bootstrap: 3
+        };
+
+        function swap_bs() {
+            page.bootstrap = 3;
+        }
+    </script>
+
+    <!-- datepicker js -->
+    <script src="~/assets/plugins/bootstrap-datetimepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/assets/js/pages/ac-datepicker.js"></script>
+}
+

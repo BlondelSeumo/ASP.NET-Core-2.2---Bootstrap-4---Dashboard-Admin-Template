@@ -1,0 +1,101 @@
+﻿
+@{
+    ViewData["Title"] = "AmChart";
+}
+
+<!-- [ Main Content ] start -->
+<section class="pcoded-main-container">
+    <div class="pcoded-wrapper">
+        <div class="pcoded-content">
+            <div class="pcoded-inner-content">
+                <!-- [ breadcrumb ] start -->
+                <div class="page-header">
+                    <div class="page-block">
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <div class="page-header-title">
+                                    <h5 class="m-b-10">amChart 4</h5>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/Dashboard/@Pages.Dashboard1.Value"><i class="feather icon-home"></i></a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Chart</a></li>
+                                    <li class="breadcrumb-item"><a href="#!">amChart 4</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- [ breadcrumb ] end -->
+                <div class="main-body">
+                    <div class="page-wrapper">
+                        <!-- [ Main Content ] start -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="alert alert-primary" role="alert">
+                                    <p>Use our extra helper file for quick setup Charts in your page - <a href="/Chart/@Pages.ChartPackage.Value" target="_blank" class="alert-link">CHECKOUT</a></p>
+                                    <label class="text-muted">Copy/paste source code in your page in just couples of seconds.</label>
+                                </div>
+                            </div>
+                            <!-- [ Amchart 4 chart ] start -->
+                            <div class="col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Amchart 4</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <h3 class="mb-4">Pie Chart</h3>
+                                        <div class="row">
+                                            <div class="col-md-12 mb-5">
+                                                <h5>Pie [ With Legend ] Chart</h5>
+                                                <hr>
+                                                <div id="am-pie-2" style="height: 400px"></div>
+                                            </div>
+                                        </div>
+
+                                        <h3 class="mb-4 mt-5">XY Chart</h3>
+                                        <div class="row">
+                                            <div class="col-md-12 mb-5">
+                                                <h5>XY [ Stacked 1 ] Chart</h5>
+                                                <hr>
+                                                <div id="am-xy-1" style="height: 400px"></div>
+                                            </div>
+                                        </div>
+
+                                        <h3 class="mb-4 mt-5">Map Chart</h3>
+                                        <div class="row">
+                                            <div class="col-md-12 mb-5">
+                                                <h5>Map [ Heat-Map ] Chart</h5>
+                                                <hr>
+                                                <div id="am-map-4" style="height: 400px"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ Amchart 4 chart ] End -->
+                        </div>
+                        <!-- [ Main Content ] end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- [ Main Content ] end -->
+
+@section Styles{
+
+}
+
+@section Scripts{
+    <!-- am chart js -->
+    <script src="~/assets/plugins/chart-am4/js/core.js"></script>
+    <script src="~/assets/plugins/chart-am4/js/charts.js"></script>
+    <script src="~/assets/plugins/chart-am4/js/animated.js"></script>
+    <script src="~/assets/plugins/chart-am4/js/maps.js"></script>
+    <script src="~/assets/plugins/chart-am4/js/worldLow.js"></script>
+
+    <!-- am-chart custom js -->
+    <script src="~/assets/js/pages/chart-am-custom.js"></script>
+}
+

@@ -1,0 +1,160 @@
+﻿
+@{
+    ViewData["Title"] = "EChart";
+}
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-wrapper">
+        <div class="pcoded-content">
+            <div class="pcoded-inner-content">
+                <!-- [ breadcrumb ] start -->
+                <div class="page-header">
+                    <div class="page-block">
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <div class="page-header-title">
+                                    <h5 class="m-b-10">Echart Chart</h5>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/Dashboard/@Pages.Dashboard1.Value"><i class="feather icon-home"></i></a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Chart</a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Echart Chart</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- [ breadcrumb ] end -->
+                <div class="main-body">
+                    <div class="page-wrapper">
+                        <!-- [ Main Content ] start -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="alert alert-primary" role="alert">
+                                    <p>Use our extra helper file for quick setup Charts in your page - <a href="/Chart/@Pages.ChartPackage.Value" target="_blank" class="alert-link">CHECKOUT</a></p>
+                                    <label class="text-muted">Copy/paste source code in your page in just couples of seconds.</label>
+                                </div>
+                            </div>
+                            <!-- [ echart-chart ] start -->
+                            <div class="col-xl-6 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Area Chart</h5>
+                                    </div>
+                                    <div class="card-block  text-center">
+                                        <div id="chart-echart-line-basic" style="width: 100%; height: 300px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Area Chart</h5>
+                                    </div>
+                                    <div class="card-block  text-center">
+                                        <div id="chart-echart-line-area" style="width: 100%; height: 300px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Bar [ Basic Column ] Chart</h5>
+                                    </div>
+                                    <div class="card-block  text-center">
+                                        <div id="chart-Bar-besic-column" style="width: 100%; height: 300px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Bar [ Basic Bar ] Chart</h5>
+                                        <div class="card-block  text-center">
+                                            <div id="chart-Bar-besic-bar" style="width: 100%; height: 300px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Bar [ Timeline ] Chart</h5>
+                                        <div class="card-block  text-center">
+                                            <div id="chart-Bar-timeline" style="width: 100%; height: 450px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Pie [ Basic Column ] Chart</h5>
+                                    </div>
+                                    <div class="card-block  text-center">
+                                        <div id="chart-pie-basic" style="width: 100%; height: 300px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Pie [ Doughnut ] Chart</h5>
+                                    </div>
+                                    <div class="card-block  text-center">
+                                        <div id="chart-pie-doughnut" style="width: 100%; height: 300px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Pie [ Timeline ] Chart</h5>
+                                    </div>
+                                    <div class="card-block  text-center">
+                                        <div id="chart-pie-timeline" style="width: 100%; height: 450px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Gauge Chart</h5>
+                                    </div>
+                                    <div class="card-block  text-center">
+                                        <div id="chart-Gauge" style="width: 100%; height: 450px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>DynamicLineBar Chart</h5>
+                                    </div>
+                                    <div class="card-block  text-center">
+                                        <div id="chart-DynamicLineBar" style="width: 100%; height: 350px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ echart-chart ] end -->
+                        </div>
+                        <!-- [ Main Content ] end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@section Styles{
+
+}
+
+@section Scripts{
+    <!--echarts chart -->
+    <script src="https://echarts.baidu.com/echarts2/doc/example/timelineOption.js"></script>
+    <script src="~/assets/plugins/chart-echarts/js/echarts-en.min.js"></script>
+    <script src="~/assets/js/pages/chart-echart-custom.js"></script>
+}

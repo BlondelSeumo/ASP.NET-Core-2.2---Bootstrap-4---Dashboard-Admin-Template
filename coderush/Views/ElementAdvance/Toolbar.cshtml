@@ -1,0 +1,214 @@
+﻿
+@{
+    ViewData["Title"] = "Toolbar";
+}
+
+
+
+<!-- [ Main Content ] start -->
+<section class="pcoded-main-container">
+    <div class="pcoded-wrapper">
+        <div class="pcoded-content">
+            <div class="pcoded-inner-content">
+                <!-- [ breadcrumb ] start -->
+                <div class="page-header">
+                    <div class="page-block">
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <div class="page-header-title">
+                                    <h5 class="m-b-10">Toolbar</h5>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/Dashboard/@Pages.Dashboard1.Value"><i class="feather icon-home"></i></a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Advance Components</a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Toolbar</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- [ breadcrumb ] end -->
+                <div class="main-body">
+                    <div class="page-wrapper">
+                        <!-- [ Main Content ] start -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="alert alert-primary" role="alert">
+                                    <p>Use our extra helper file for quick setup Advance Components in your page - <a href="/ElementAdvance/@Pages.AdvancePackage.Value" target="_blank" class="alert-link">CHECKOUT</a></p>
+                                    <label class="text-muted">Copy/paste source code in your page in just couples of seconds.</label>
+                                </div>
+                            </div>
+                            <!-- [ Toolbar ] start -->
+                            <div class="col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Default Toolbar</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div id="toolbar-options" class="hidden">
+                                            <a href="#!"><i class="feather icon-wifi-off"></i></a>
+                                            <a href="#!"><i class="feather icon-mic"></i></a>
+                                            <a href="#!"><i class="feather icon-battery-charging"></i></a>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-6 mb-4">
+                                                <h5>Light Toolbar</h5>
+                                                <hr>
+                                                <div data-toolbar="user-options" class="btn-toolbar btn-default btn-toolbar-light" id="light-toolbar"><i class="feather icon-settings"></i></div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6 mb-4">
+                                                <h5>Dark Toolbar</h5>
+                                                <hr>
+                                                <div data-toolbar="user-options" class="btn-toolbar btn-inverse btn-toolbar-dark" id="dark-toolbar"><i class="feather icon-settings"></i></div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Colorful Toolbar</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div id="toolbar-option" class="hidden">
+                                            <a href="#!"><i class="feather icon-wifi-off"></i></a>
+                                            <a href="#!"><i class="feather icon-mic"></i></a>
+                                            <a href="#!"><i class="feather icon-battery-charging"></i></a>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-6 mb-4">
+                                                <h5>Primary Toolbar</h5>
+                                                <hr>
+                                                <div data-toolbar="user-options" class="btn-toolbar btn-primary btn-toolbar-primary" id="primary-toolbar"><i class="feather icon-settings"></i></div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6 mb-4">
+                                                <h5>Success Toolbar</h5>
+                                                <hr>
+                                                <div data-toolbar="user-options" class="btn-toolbar btn-success btn-toolbar-success" id="success-toolbar"><i class="feather icon-settings"></i></div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6 mb-4">
+                                                <h5>Info Toolbar</h5>
+                                                <hr>
+                                                <div data-toolbar="user-options" class="btn-toolbar btn-info btn-toolbar-info" id="info-toolbar"><i class="feather icon-settings"></i></div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6 mb-4">
+                                                <h5>Danger Toolbar</h5>
+                                                <hr>
+                                                <div data-toolbar="user-options" class="btn-toolbar btn-danger btn-toolbar-danger" id="danger-toolbar"><i class="feather icon-settings"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Position Toolbar</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div id="toolbar-options1" class="hidden">
+                                            <a href="#!"><i class="feather icon-wifi-off"></i></a>
+                                            <a href="#!"><i class="feather icon-mic"></i></a>
+                                            <a href="#!"><i class="feather icon-battery-charging"></i></a>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-6 mb-4">
+                                                <h5>Top Toolbar</h5>
+                                                <hr>
+                                                <div data-toolbar="user-options" class="btn-toolbar btn-primary btn-toolbar-primary" id="top-toolbar"><i class="feather icon-settings"></i></div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6 mb-4">
+                                                <h5>Left Toolbar</h5>
+                                                <hr>
+                                                <div data-toolbar="user-options" class="btn-toolbar btn-success btn-toolbar-success" id="left-toolbar"><i class="feather icon-settings"></i></div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6 mb-4">
+                                                <h5>Bottom Toolbar</h5>
+                                                <hr>
+                                                <div data-toolbar="user-options" class="btn-toolbar btn-info btn-toolbar-info" id="bottom-toolbar"><i class="feather icon-settings"></i></div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6 mb-4">
+                                                <h5>Right Toolbar</h5>
+                                                <hr>
+                                                <div data-toolbar="user-options" class="btn-toolbar btn-warning btn-toolbar-warning" id="right-toolbar"><i class="feather icon-settings"></i></div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6 mb-4">
+                                                <h5>On Click Toolbar</h5>
+                                                <hr>
+                                                <div data-toolbar="user-options" class="btn-toolbar btn-danger btn-toolbar-danger" id="click-toolbar" data-toolbar-event="click"><i class="feather icon-settings"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Animation Toolbar</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div id="toolbar-options2" class="hidden">
+                                            <a href="#!"><i class="feather icon-wifi-off"></i></a>
+                                            <a href="#!"><i class="feather icon-mic"></i></a>
+                                            <a href="#!"><i class="feather icon-battery-charging"></i></a>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4 col-sm-6 mb-4">
+                                                <h5>Standard Toolbar</h5>
+                                                <hr>
+                                                <div data-toolbar="user-options" class="btn-toolbar btn-primary btn-toolbar-primary" id="standard-toolbar"><i class="feather icon-settings"></i></div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6 mb-4">
+                                                <h5>Flip Toolbar</h5>
+                                                <hr>
+                                                <div data-toolbar="user-options" class="btn-toolbar btn-success btn-toolbar-success" id="flip-toolbar"><i class="feather icon-settings"></i></div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6 mb-4">
+                                                <h5>Grow Toolbar</h5>
+                                                <hr>
+                                                <div data-toolbar="user-options" class="btn-toolbar btn-info btn-toolbar-info" id="grow-toolbar"><i class="feather icon-settings"></i></div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6 mb-4">
+                                                <h5>Fly in Toolbar</h5>
+                                                <hr>
+                                                <div data-toolbar="user-options" class="btn-toolbar btn-warning btn-toolbar-warning" id="flyin-toolbar"><i class="feather icon-settings"></i></div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6 mb-4">
+                                                <h5>Bounce Toolbar</h5>
+                                                <hr>
+                                                <div data-toolbar="user-options" class="btn-toolbar btn-danger btn-toolbar-danger" id="bounce-toolbar" data-toolbar-event="click"><i class="feather icon-settings"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ Toolbar ] end -->
+                        </div>
+                        <!-- [ Main Content ] end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- [ Main Content ] end -->
+
+
+@section Styles{
+    <!-- toolbar css -->
+    <link rel="stylesheet" href="~/assets/plugins/toolbar/css/jquery.toolbar.css">
+    <style>
+        .btn-toolbar {
+            margin: 0 auto;
+        }
+    </style>
+}
+
+@section Scripts{
+    <!-- toolbar Js -->
+    <script src="~/assets/plugins/toolbar/js/jquery.toolbar.min.js"></script>
+    <script src="~/assets/js/pages/ac-toolbar.js"></script>
+}
+

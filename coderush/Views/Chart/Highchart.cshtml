@@ -1,0 +1,141 @@
+﻿
+@{
+    ViewData["Title"] = "Highchart";
+}
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-wrapper">
+        <div class="pcoded-content">
+            <div class="pcoded-inner-content">
+                <!-- [ breadcrumb ] start -->
+                <div class="page-header">
+                    <div class="page-block">
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <div class="page-header-title">
+                                    <h5 class="m-b-10">Highchart Chart</h5>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/Dashboard/@Pages.Dashboard1.Value"><i class="feather icon-home"></i></a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Chart</a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Highchart Chart</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- [ breadcrumb ] end -->
+                <div class="main-body">
+                    <div class="page-wrapper">
+                        <!-- [ Main Content ] start -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="alert alert-primary" role="alert">
+                                    <p>Use our extra helper file for quick setup Charts in your page - <a href="/Chart/@Pages.ChartPackage.Value" target="_blank" class="alert-link">CHECKOUT</a></p>
+                                    <label class="text-muted">Copy/paste source code in your page in just couples of seconds.</label>
+                                </div>
+                            </div>
+                            <!-- [ high-Chart ] start -->
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Bar [ Basic ] Chart</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div id="chart-highchart-bar1" style="width: 100%; height: 450px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Line [ Basic ] Chart</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div id="chart-highchart-line1" style="width: 100%; height: 350px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Area [ Zoom ] Chart</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div id="chart-highchart-area2" style="width: 100%; height: 350px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Pie [ Basic ] Chart</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div id="chart-highchart-pie1" style="width: 100%; height: 350px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Pie [ Donut ] Chart</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div id="chart-highchart-pie2" style="width: 100%; height: 350px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Pie [ 3D ] Chart</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div id="chart-highchart-pie-3d1" style="width: 100%; height: 350px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Pie [ Donut 3D ] Chart</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div id="chart-highchart-pie-3d2" style="width: 100%; height: 350px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Combinations [ Column, Line & Pie ] Chart</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <div id="chart-highchart-combo1" style="width: 100%; height: 450px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ high-Chart ] end -->
+                        </div>
+                        <!-- [ Main Content ] end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@section Styles{
+
+}
+
+@section Scripts{
+    <!-- highchart chart -->
+    <script src="~/assets/plugins/chart-highchart/js/highcharts.js"></script>
+    <script src="~/assets/plugins/chart-highchart/js/highcharts-3d.js"></script>
+    <script src="~/assets/js/pages/chart-highchart-custom.js"></script>
+}
+

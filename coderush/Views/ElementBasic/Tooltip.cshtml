@@ -1,0 +1,89 @@
+﻿
+@{
+    ViewData["Title"] = "Tooltip";
+}
+
+
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-wrapper">
+        <div class="pcoded-content">
+            <div class="pcoded-inner-content">
+                <!-- [ breadcrumb ] start -->
+                <div class="page-header">
+                    <div class="page-block">
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <div class="page-header-title">
+                                    <h5 class="m-b-10">Tooltip & Popover</h5>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/Dashboard/@Pages.Dashboard1.Value"><i class="feather icon-home"></i></a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Basic Components</a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Tooltip & Popover</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- [ breadcrumb ] end -->
+                <div class="main-body">
+                    <div class="page-wrapper">
+                        <!-- [ Main Content ] start -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="alert alert-primary" role="alert">
+                                    <p>Use our extra helper file for quick setup Basic Components in your page - <a href="/ElementBasic/@Pages.BasicPackage.Value" target="_blank" class="alert-link">CHECKOUT</a></p>
+                                    <label class="text-muted">Copy/paste source code in your page in just couples of seconds.</label>
+                                </div>
+                            </div>
+                            <!-- [ tooltip ] start -->
+                            <div class="col-md-6 col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Tooltip</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <button type="button" class="btn btn-default " data-toggle="tooltip" data-placement="top" title="tooltip on top">Top</button>
+                                        <button type="button" class="btn btn-primary  " data-toggle="tooltip" data-placement="left" title="tooltip on left">Left</button>
+                                        <button type="button" class="btn btn-success  " data-toggle="tooltip" data-placement="right" title="tooltip on right">Right</button>
+                                        <button type="button" class="btn btn-warning  " data-toggle="tooltip" data-placement="bottom" title="tooltip on bottom">Bottom</button>
+                                        <button type="button" class="btn btn-info  " data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">Html Tooltip</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Popover</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <button type="button" class="btn btn-default " data-toggle="popover" data-placement="top" title="" data-content="top by popover" data-original-title="popup on top">Top</button>
+                                        <button type="button" class="btn btn-primary  " data-toggle="popover" data-placement="left" title="popup on left" data-content="left by popover">Left</button>
+                                        <button type="button" class="btn btn-success  " data-toggle="popover" data-placement="right" title="popup on right" data-content="right by popover">Right</button>
+                                        <button type="button" class="btn btn-warning  " data-toggle="popover" data-placement="bottom" title="popup on bottom" data-content="bottom by popover">Bottom</button>
+                                        <button type="button" class="btn btn-info  " data-toggle="popover" data-html="true" data-placement="top" title="<em>popup</em> <u>with</u> <b>HTML</b>" data-content="popup by HTML">Html popup</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ tooltip ] end -->
+                        </div>
+                    </div>
+                    <!-- [ Main Content ] end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+
+@section Styles{
+
+}
+
+@section Scripts{
+
+}
+

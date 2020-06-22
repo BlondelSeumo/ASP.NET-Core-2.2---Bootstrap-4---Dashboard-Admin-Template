@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewData["Title"] = "TinyMCE";
+}
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-wrapper">
+        <div class="pcoded-content">
+            <div class="pcoded-inner-content">
+                <!-- [ breadcrumb ] start -->
+                <div class="page-header">
+                    <div class="page-block">
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <div class="page-header-title">
+                                    <h5 class="m-b-10">Tinymce Editor</h5>
+                                </div>
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/Dashboard/@Pages.Dashboard1.Value"><i class="feather icon-home"></i></a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Editor</a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Tinymce Editor</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- [ breadcrumb ] end -->
+                <div class="main-body">
+                    <div class="page-wrapper">
+                        <!-- [ Main Content ] start -->
+                        <div class="row">
+                            <!-- [ tinymce editor ] start -->
+                            <div class="col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Tinymce Editor</h5>
+                                    </div>
+                                    <div class="card-block">
+                                        <textarea id="tinymce-editor">
+                                        <p>hello..</p>
+                                            </textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- [ tinymce editor ] end -->
+                        </div>
+                        <!-- [ Main Content ] end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@section Styles{
+
+}
+
+@section Scripts{
+    <!-- tinymce editor -->
+    <script src="~/assets/plugins/tinymce/tinymce.min.js"></script>
+
+    <script type="text/javascript">
+        // tinymce editor
+        $(window).on('load', function() {
+            tinymce.init({
+                selector: '#tinymce-editor',
+                height: 200,
+                theme: 'modern',
+                plugins: [
+                    'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+                    'searchreplace wordcount visualblocks visualchars code fullscreen',
+                    'insertdatetime media nonbreaking save table contextmenu directionality',
+                    'emoticons template paste textcolor colorpicker textpattern imagetools codesample toc'
+                ],
+                toolbar1: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+                toolbar2: 'print preview media | forecolor backcolor emoticons | codesample',
+                image_advtab: true
+            });
+        });
+    </script>
+}
+
